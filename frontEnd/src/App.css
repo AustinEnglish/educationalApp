@@ -3,14 +3,29 @@
    }
 img {
     max-width: 50px;
-    border-style: solid;
-    border-width: 1px;
-    float: right;
+    /* float: right; */
     
 }
 #title {
     width: 18%;
     margin: 0%; 
-    border-style: solid;
-    border-width: 1px;
+}
+body, html, #root, button, .rbc-event-label, .rbc-event-content, .rbc-label{
+    cursor: url('media/pencil.png'), pointer;
+    font-family: 'Playfair Display', serif;
+}
+.rbc-time-gutter, .rbc-time-column, .rbc-timeslot-group{
+    color: #dab9ff;
+}
+.rbc-time-content{
+    color: gray;
+}
+button:hover{
+    color: #c0c0c0;
+}
+.rbc-time-content{
+    background-image: linear-gradient(red, yellow);
+}
+.rbc-current-time-indicator{
+    color: #b9ffda;
 }
