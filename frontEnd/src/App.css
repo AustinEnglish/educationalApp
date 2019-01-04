@@ -1,0 +1,16 @@
+.rbc-calendar {
+    min-height: 600px;
+   }
+img {
+    max-width: 50px;
+    border-style: solid;
+    border-width: 1px;
+    float: right;
+    
+}
+#title {
+    width: 18%;
+    margin: 0%; 
+    border-style: solid;
+    border-width: 1px;
+}
