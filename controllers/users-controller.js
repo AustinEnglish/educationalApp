@@ -10,8 +10,14 @@ User.create(users)
 
 
 const login = (req, res) => {
-    const {username, password} = req.body;
-    res.send({success: true, messages: "Login Sucessful", data: username})
+    const {name, password} = req.body;
+
+    User.find({name: req.body.name}).exec((err,user)=>{
+        if(err) {res.status(500).send({sucess: false,message:"Error w/db", error:err.message})}
+        else if(user.length === 0) {res.status(200).send({sucess: true, message:"No users Found"})}
+        else{res.status(200).send({sucess: true,data: user})}
+    })
+
 
 }
 

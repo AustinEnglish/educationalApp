@@ -8,15 +8,15 @@ module.exports.users = [
         Events :[
             {
                 allDay: false,
-                startDate: new Date('December 10, 2017 11:13:00'),
-                endDate: new Date('December 09, 2017 11:13:00'),
-                title: 'hi',
+                startDate: 'January 04, 2019 12:00:00',
+                endDate: 'January 04, 2019 1:30:00',
+                title: 'class1',
             },
             {
-                allDay: true,
-                endDate: new Date('December 09, 2017 11:13:00'),
-                startDate: new Date('December 09, 2017 11:13:00'),
-                title: 'All Day Event',
+                allDay: false,
+                startDate: 'January 03, 2019 11:13:00',
+                endDate: 'January 03, 2019 2:50:00',
+                title: 'class2',
             },
         ]
     },
@@ -31,15 +31,15 @@ module.exports.users = [
         Events:[
             {
                 allDay: false,
-                startDate: new Date('December 10, 2017 11:13:00'),
-                endDate: new Date('December 09, 2017 11:13:00'),
-                title: 'hi',
+                startDate: 'January 04, 2019 12:00:00',
+                endDate: 'January 04, 2019 1:30:00',
+                title: 'class1',
             },
             {
-                allDay: true,
-                endDate: new Date('December 09, 2017 11:13:00'),
-                startDate: new Date('December 09, 2017 11:13:00'),
-                title: 'All Day Event',
+                allDay: false,
+                startDate: 'January 04, 2019 12:00:00',
+                endDate: 'January 04, 2019 1:30:00',
+                title: 'class2',
             },
         ]
     },
@@ -51,15 +51,15 @@ module.exports.users = [
         Events:[
             {
                 allDay: false,
-                startDate: new Date('December 10, 2017 11:13:00'),
-                endDate: new Date('December 09, 2017 11:13:00'),
-                title: 'hi',
+                startDate: 'January 04, 2019 12:00:00',
+                endDate: 'January 04, 2019 1:30:00',
+                title: 'class1',
             },
             {
-                allDay: true,
-                endDate: new Date('December 09, 2017 11:13:00'),
-                startDate: new Date('December 09, 2017 11:13:00'),
-                title: 'All Day Event',
+                allDay: false,
+                startDate: 'January 04, 2019 12:00:00',
+                endDate: 'January 04, 2019 1:30:00',
+                title: 'class2',
             },
         ]
     },
@@ -71,15 +71,15 @@ module.exports.users = [
         Events:[
             {
                 allDay: false,
-                startDate: new Date('December 10, 2017 11:13:00'),
-                endDate: new Date('December 09, 2017 11:13:00'),
-                title: 'hi',
+                startDate: 'January 04, 2019 12:00:00',
+                endDate: 'January 04, 2019 1:30:00',
+                title: 'class1',
             },
             {
-                allDay: true,
-                endDate: new Date('December 09, 2017 11:13:00'),
-                startDate: new Date('December 09, 2017 11:13:00'),
-                title: 'All Day Event',
+                allDay: false,
+                startDate: 'January 04, 2019 12:00:00',
+                endDate: 'January 04, 2019 1:30:00',
+                title: 'class2',
             },
         ]
     }
