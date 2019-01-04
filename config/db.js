@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-const db_url = 'mongodb://localhost:27017/mongodblesson';
+const db_url = 'mongodb://localhost:27017/calendar';
 
 mongoose.connect(db_url, { useNewUrlParser: true });
 
