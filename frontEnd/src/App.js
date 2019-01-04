@@ -17,11 +17,7 @@ class App extends Component {
 
   }
 
-  componentDidMount() {
-
-
-
-  }
+ 
 
   loginUser = () => {
 
@@ -52,6 +48,7 @@ class App extends Component {
                   placeholder="Name"
                   value={this.state.name}
                   onChange={(e) => this.setState({ name: e.target.value })} />
+                  
 
                 <input type='text'
                   className="form-control"

@@ -41,18 +41,19 @@ const login = (req, res) => {
 
 // const create = (req, res) => {
 //     const user = {... req.body}
+//     const {name,} = req.body;
 //     User.create(user).then(user=>res.status(200).send({success:true, data:user}))
 //     .catch(err=> res.status(200).send({success: false, message: "dataBase error", error: err.message}))
 // }
 
 
-// const update = (req, res) => {
-//     User.findByIdAndUpdate(req.params.id,{$set:req.body},{new:true},(err,user)=>{
-//          if(err) {res.status(500).send({sucess: false,message:"Error w/db", error:err.message})}
-//          else{res.status(200).send({sucess: true,data: user})}
+const update = (req, res) => {
+    User.findByIdAndUpdate(req.params.id,{$set:req.body},{new:true},(err,user)=>{
+         if(err) {res.status(500).send({sucess: false,message:"Error w/db", error:err.message})}
+         else{res.status(200).send({sucess: true,data: user})}
 
-//     })
-// }
+    })
+}
 
 // const destroy = (req, res) => {
 //     User.findByIdAndRemove(req.params.id,(err,user)=>{
@@ -65,4 +66,4 @@ const login = (req, res) => {
 // }
 
 
-module.exports = {  seedDB,login }
+module.exports = {  seedDB,login,update }

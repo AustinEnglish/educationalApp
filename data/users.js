@@ -31,15 +31,15 @@ module.exports.users = [
         Events:[
             {
                 allDay: false,
-                startDate: 'January 04, 2019 12:00:00',
-                endDate: 'January 04, 2019 1:30:00',
+                startDate: 'January 04, 2019 3:00:00',
+                endDate: 'January 04, 2019 4:30:00',
                 title: 'class1',
             },
             {
                 allDay: false,
                 startDate: 'January 04, 2019 12:00:00',
                 endDate: 'January 04, 2019 1:30:00',
-                title: 'class2',
+                title: 'class1',
             },
         ]
     },
