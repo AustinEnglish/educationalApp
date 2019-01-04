@@ -41,7 +41,6 @@ class App extends Component {
       <div id="App">
         {
           !this.state.loggedIn && (
-<<<<<<< HEAD
             <form className="form-inline">
               <div className= "login">
                 <div>
@@ -60,25 +59,6 @@ class App extends Component {
                 <div>
                   <button type='submit' className='btn btn-primary add-button reg-buttons sub-button' onClick={this.loginUser}> Login </button>
                 </div>
-=======
-            <div>
-              <div>
-                <input type='text'
-                  className="form-control"
-                  placeholder="Name"
-                  value={this.state.name}
-                  onChange={(e) => this.setState({ name: e.target.value })} />
-                  
-
-                <input type='text'
-                  className="form-control"
-                  placeholder="password"
-                  value={this.state.password}
-                  onChange={(e) => this.setState({ password: e.target.value })} />
-              </div>
-              <div>
-                <button type='submit' className='btn btn-primary add-button reg-buttons sub-button' onClick={this.loginUser}> Login </button>
->>>>>>> eaa9ca77c6538dbca9f37f60d56f1d2c5a6e9f7f
               </div>
             </form>
           )}
