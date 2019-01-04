@@ -10,7 +10,7 @@ img {
     width: 18%;
     margin: 0%; 
 }
-body, html, #root, button, .rbc-event-label, .rbc-event-content, .rbc-label{
+body, html, #root, button, .rbc-event-label, .rbc-event-content, .rbc-label, input{
     cursor: url('media/pencil.png'), pointer;
     font-family: 'Playfair Display', serif;
 }
@@ -28,4 +28,19 @@ button:hover{
 }
 .rbc-current-time-indicator{
     color: #b9ffda;
+}
+.login{
+}
+#App{
+    background-image: url('http://2.bp.blogspot.com/-i_oOoKdEUKs/VllggObsjrI/AAAAAAAAAJo/inpecOWIVQw/s1600/notebook_emptiness_old_table_pen_writing_hd-wallpaper-77243.jpg')
+}
+.name-input{
+    /* background: transparent; */
+    margin: 200px 300px;
+}
+.password-input{
+    margin: 10px 700px;
+}
+.login{
+    margin: 50px 100px;
 }

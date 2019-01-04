@@ -45,28 +45,30 @@ class App extends Component {
       <div id="App">
         {
           !this.state.loggedIn && (
-            <div>
-              <div>
-                <input type='text'
-                  className="form-control"
-                  placeholder="Name"
-                  value={this.state.name}
-                  onChange={(e) => this.setState({ name: e.target.value })} />
+            <form className="form-inline">
+              <div className= "login">
+                <div>
+                  <input type='text'
+                    className="form-control name-input"
+                    placeholder="Name"
+                    value={this.state.name}
+                    onChange={(e) => this.setState({ name: e.target.value })} />
 
-                <input type='text'
-                  className="form-control"
-                  placeholder="password"
-                  value={this.state.password}
-                  onChange={(e) => this.setState({ password: e.target.value })} />
+                  <input type='text'
+                    className="form-control password-input"
+                    placeholder="password"
+                    value={this.state.password}
+                    onChange={(e) => this.setState({ password: e.target.value })} />
+                </div>
+                <div>
+                  <button type='submit' className='btn btn-primary add-button reg-buttons sub-button' onClick={this.loginUser}> Login </button>
+                </div>
               </div>
-              <div>
-                <button type='submit' className='btn btn-primary add-button reg-buttons sub-button' onClick={this.loginUser}> Login </button>
-              </div>
-            </div>
+            </form>
           )}
 
         {
-          this.state.loggedIn && this.state.user &&(
+          this.props.loggedIn && this.props.user &&(
           <div>
 
             <div>
@@ -74,7 +76,7 @@ class App extends Component {
               <h1 id="title">Plan Ahead</h1>
               <img src={notebookPng} alt='' />
             </div>
-            <Calendar user={this.state.user} />
+            <Calendar user={this.props.user} />
 
           </div>
           )}
